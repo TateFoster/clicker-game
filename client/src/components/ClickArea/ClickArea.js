@@ -1,5 +1,8 @@
 import "./ClickArea.css";
+import Trees from "./Backgrounds/trees.jpg";
+import Quotes from "./Quotes/Quotes.js";
+import Counter from "./Counter/Counter.js";
 
 export default function ClickArea() {
-	return <></>;
+	return <div className="clickArea"></div>;
 }
