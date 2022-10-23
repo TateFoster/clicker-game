@@ -1,13 +1,10 @@
 .itemArea {
     display: flex;
-    width: 33.33%;
+    width: 15%;
 }
-.lifeShop {
-    width: 50%;
-    background-color: lightblue;
-}
+
 .deathShop {
-    width: 50%;
+    width: 100%;
     background-color: black;
     color: red;
 }
