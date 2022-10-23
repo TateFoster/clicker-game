@@ -1,5 +1,7 @@
 .clickArea {
-    background-image: url("./Backgrounds/trees.jpg");
-    background-size: cover;
-    background-position: center;
+    width: 66.67%;
+}
+
+.background {
+    width: 100%;
 }

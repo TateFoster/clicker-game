@@ -4,5 +4,9 @@ import Quotes from "./Quotes/Quotes.js";
 import Counter from "./Counter/Counter.js";
 
 export default function ClickArea() {
-	return <div className="clickArea"></div>;
+	return (
+		<div className="clickArea">
+			<img className="background" src={Trees}></img>
+		</div>
+	);
 }
