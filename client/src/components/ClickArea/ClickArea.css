@@ -1,7 +1,13 @@
 .clickArea {
+    background-image: url(./Backgrounds/trees.jpg);
     width: 85%;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
 }
 
-.background {
+/* .background {
     width: 100%;
-}
+    z-index: -1
+} */

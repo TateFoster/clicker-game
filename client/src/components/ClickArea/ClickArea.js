@@ -15,7 +15,7 @@ export default function ClickArea() {
 	return (
 		<div className="clickArea">
 			<Counter />
-			<img className="background" src={Trees} onClick={addTime}></img>
+			{/* <img className="background" src={Trees} onClick={addTime}></img> */}
 			<Quotes />
 		</div>
 	);

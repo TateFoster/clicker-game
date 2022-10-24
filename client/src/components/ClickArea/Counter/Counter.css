@@ -1,0 +1,10 @@
+.counterArea {
+    background-image: radial-gradient(red, black);
+    width:25%;
+    height: 50px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
