@@ -9,13 +9,15 @@ export default function ClickArea() {
 	const [counter, setCounter] = useState(counterMax);
 
 	const addTime = () => {
-		setCounter(counter + counterMax / 1000);
+		if (counter > 0) {
+			setCounter(counter + counterMax / 1000);
+			console.log(counter);
+		}
 	};
 
 	return (
-		<div className="clickArea">
-			<Counter />
-			{/* <img className="background" src={Trees} onClick={addTime}></img> */}
+		<div className="clickArea" onClick={addTime}>
+			<Counter counter={counter} setCounter={setCounter} />
 			<Quotes />
 		</div>
 	);
