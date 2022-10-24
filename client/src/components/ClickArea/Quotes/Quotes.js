@@ -10,3 +10,7 @@ const quotes = [
 	"You know what you did.",
 	"We can smell your fear.",
 ];
+
+export default function Quotes() {
+	return <div></div>;
+}

@@ -6,7 +6,9 @@ import Counter from "./Counter/Counter.js";
 export default function ClickArea() {
 	return (
 		<div className="clickArea">
+			<Counter />
 			<img className="background" src={Trees}></img>
+			<Quotes />
 		</div>
 	);
 }
