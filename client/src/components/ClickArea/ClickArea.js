@@ -10,8 +10,10 @@ export default function ClickArea() {
 
 	const addTime = () => {
 		if (counter > 0) {
-			setCounter(counter + counterMax / 1000);
-			console.log(counter);
+			setCounter(Math.round((counter + counterMax / 1000) * 100) / 100);
+			if (counter > counterMax) {
+				setCounter((counter = counterMax));
+			}
 		}
 	};
 

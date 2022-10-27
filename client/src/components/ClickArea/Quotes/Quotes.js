@@ -12,5 +12,7 @@ const quotes = [
 ];
 
 export default function Quotes() {
-	return <div></div>;
+	return <div className="quoteArea">
+        
+    </div>;
 }
