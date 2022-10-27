@@ -1,5 +1,4 @@
 import "./ClickArea.css";
-import Trees from "./Backgrounds/trees.jpg";
 import Quotes from "./Quotes/Quotes.js";
 import Counter from "./Counter/Counter.js";
 import { useState } from "react";
@@ -19,8 +18,12 @@ export default function ClickArea() {
 
 	return (
 		<div className="clickArea" onClick={addTime}>
-			<Counter counter={counter} setCounter={setCounter} />
-			<Quotes />
+			<Counter
+				counter={counter}
+				setCounter={setCounter}
+				counterMax={counterMax}
+			/>
+			{/* <Quotes /> */}
 		</div>
 	);
 }

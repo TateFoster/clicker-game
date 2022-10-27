@@ -1,11 +1,11 @@
 import "./Counter.css";
 
-export default function Counter({ counter, setCounter }) {
-	setInterval(() => {
+export default function Counter({ counter, setCounter, counterMax }) {
+	const timer = setInterval(() => {
 		if (counter <= 0) {
-			clearInterval();
+			clearInterval(timer);
 		} else {
-			setCounter(counter--);
+			setCounter(Math.round((counter - 1) * 100) / 100);
 		}
 	}, 1000);
 
