@@ -16,6 +16,8 @@ export default function ClickArea() {
 		}
 	};
 
+
+
 	return (
 		<div className="clickArea" onClick={addTime}>
 			<Counter
