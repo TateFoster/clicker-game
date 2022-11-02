@@ -1,4 +1,7 @@
 .quoteArea {
-    background-image: radial-gradient(red, black);
-    width:100%
+    background-image: radial-gradient(black, rgb(78, 48, 78));
+    width:50%;
+    height: 50px;
+    text-align: center;
+    font-size: 2rem;
 }

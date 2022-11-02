@@ -2,10 +2,17 @@
     width: 100%;
     background: black;
     color: darkred;
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
 .deathButton {
+    text-align: center;
+    font-size: 1.25rem;
+    width: 200px;
+    height: 59px;
     border: solid 2px purple;
     background: lightblue
 }
