@@ -1,18 +1,37 @@
 .deathArea {
     width: 100%;
-    background: black;
+    background: repeating-linear-gradient(25deg,
+    #020202 ,
+    #251212 ,
+    #271829 ,
+    #020101 );
     color: darkred;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-evenly;
     height: 100vh;
+    flex-direction: column;
+}
+
+.deathIcon {
+    width: 40%
+}
+
+.deathButtonArea{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .deathButton {
-    text-align: center;
-    font-size: 1.25rem;
+    justify-content: center;
+    border-radius: 33%;
+    font-size: 1.4rem;
     width: 200px;
     height: 59px;
-    border: solid 2px purple;
-    background: lightblue
+    border: solid 2px #4e304e;
+    background: black;
+    display: flex;
+    align-items: center;
 }
