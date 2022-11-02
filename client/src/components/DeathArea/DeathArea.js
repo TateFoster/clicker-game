@@ -1,5 +1,6 @@
 import "./DeathArea.css";
-import Quotes from "../DeathArea/Quotes/Quotes.js";
+import Quotes from "./Quotes/Quotes.js";
+import Shop from "./Shop/Shop.js";
 import skull from "../Backgrounds/skull.png";
 import { useState } from "react";
 
@@ -15,19 +16,26 @@ export default function DeathArea({ aliveState, setAliveState }) {
 		setShop((shop = false));
 		setAliveState(!aliveState);
 	};
-
-	return (
-		<div className="deathArea">
-			<img src={skull} className="deathIcon"></img>
-			<div className="deathButtonArea">
-				<div className="deathButton" onClick={openShop}>
-					Shop
-				</div>
-				<div className="deathButton" onClick={liveAgain}>
-					Make New Attempt
-				</div>
+	if (shop) {
+		return (
+			<div className="deathArea">
+				<Shop liveAgain={liveAgain} />
 			</div>
-			<Quotes />
-		</div>
-	);
+		);
+	} else {
+		return (
+			<div className="deathArea">
+				<img src={skull} className="deathIcon"></img>
+				<div className="deathButtonArea">
+					<div className="deathButton" onClick={openShop}>
+						Shop
+					</div>
+					<div className="deathButton" onClick={liveAgain}>
+						Make New Attempt
+					</div>
+				</div>
+				<Quotes />
+			</div>
+		);
+	}
 }
