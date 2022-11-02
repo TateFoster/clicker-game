@@ -1,0 +1,11 @@
+.deathArea {
+    width: 100%;
+    background: black;
+    color: darkred;
+    display: flex
+}
+
+.deathButton {
+    border: solid 2px purple;
+    background: lightblue
+}

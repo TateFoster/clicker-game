@@ -1,9 +1,8 @@
 import "./ClickArea.css";
-import Quotes from "./Quotes/Quotes.js";
 import Counter from "./Counter/Counter.js";
 import { useState } from "react";
 
-export default function ClickArea() {
+export default function ClickArea({ aliveState, setAliveState }) {
 	const [counterMax, setCounterMax] = useState(10);
 	const [counter, setCounter] = useState(counterMax);
 
@@ -16,16 +15,15 @@ export default function ClickArea() {
 		}
 	};
 
-
-
 	return (
 		<div className="clickArea" onClick={addTime}>
 			<Counter
 				counter={counter}
 				setCounter={setCounter}
 				counterMax={counterMax}
+				aliveState={aliveState}
+				setAliveState={setAliveState}
 			/>
-			{/* <Quotes /> */}
 		</div>
 	);
 }

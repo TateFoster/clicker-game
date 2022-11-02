@@ -5,7 +5,7 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-	const [aliveState, setAliveState] = useState(true);
+	let [aliveState, setAliveState] = useState(true);
 
 	if (aliveState) {
 		return (

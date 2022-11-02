@@ -12,7 +12,9 @@ const quotes = [
 ];
 
 export default function Quotes() {
-	return <div className="quoteArea">
-        
-    </div>;
+	return (
+		<div className="quoteArea">
+			{quotes[Math.floor(Math.random() * quotes.length)]}
+		</div>
+	);
 }

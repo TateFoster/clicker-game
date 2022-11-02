@@ -1,6 +1,12 @@
 import "./Counter.css";
 
-export default function Counter({ counter, setCounter, counterMax }) {
+export default function Counter({
+	counter,
+	setCounter,
+	counterMax,
+	aliveState,
+	setAliveState,
+}) {
 	function timeDown() {
 		setCounter(counter - 1);
 	}
@@ -9,6 +15,7 @@ export default function Counter({ counter, setCounter, counterMax }) {
 
 	if (counter <= 0) {
 		clearInterval(timer);
+		setAliveState(!aliveState);
 	}
 
 	return <div className="counterArea">{counter}</div>;
