@@ -14,8 +14,8 @@ export default function Counter({
 	const timer = setInterval(timeDown, 1000);
 
 	if (counter <= 0) {
-		clearInterval(timer);
 		setAliveState(!aliveState);
+		clearInterval(timer);
 	}
 
 	return <div className="counterArea">{counter}</div>;

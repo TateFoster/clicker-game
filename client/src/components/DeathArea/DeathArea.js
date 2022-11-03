@@ -9,7 +9,6 @@ export default function DeathArea({ aliveState, setAliveState }) {
 
 	const openShop = () => {
 		setShop(!shop);
-		console.log("testing shop" + " " + shop);
 	};
 
 	const liveAgain = () => {
@@ -25,7 +24,11 @@ export default function DeathArea({ aliveState, setAliveState }) {
 	} else {
 		return (
 			<div className="deathArea">
-				<img src={skull} className="deathIcon"></img>
+				<img
+					src={skull}
+					alt="Black demonic skull with wings"
+					className="deathIcon"
+				></img>
 				<div className="deathButtonArea">
 					<div className="deathButton" onClick={openShop}>
 						Shop
