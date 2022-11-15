@@ -2,7 +2,7 @@ import "./Counter.css";
 
 export default function Counter({ counter, aliveState, setAliveState }) {
 	function timeDown() {
-		counter = counter--;
+		counter = counter - 1;
 		console.log("timer is being hit" + " " + counter);
 	}
 

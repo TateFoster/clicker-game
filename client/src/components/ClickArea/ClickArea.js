@@ -18,6 +18,7 @@ export default function ClickArea({ aliveState, setAliveState }) {
 
 	return (
 		<div className="clickArea" onClick={addTime}>
+			<div>{counter}</div>
 			<Counter
 				counter={counter}
 				counterMax={counterMax}
