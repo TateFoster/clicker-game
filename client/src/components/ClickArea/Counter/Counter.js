@@ -1,14 +1,9 @@
 import "./Counter.css";
 
-export default function Counter({
-	counter,
-	setCounter,
-	counterMax,
-	aliveState,
-	setAliveState,
-}) {
+export default function Counter({ counter, aliveState, setAliveState }) {
 	function timeDown() {
-		setCounter(counter - 1);
+		counter = counter--;
+		console.log("timer is being hit" + " " + counter);
 	}
 
 	const timer = setInterval(timeDown, 1000);

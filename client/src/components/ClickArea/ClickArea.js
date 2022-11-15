@@ -1,16 +1,17 @@
 import "./ClickArea.css";
 import Counter from "./Counter/Counter.js";
 import { useState } from "react";
-
 export default function ClickArea({ aliveState, setAliveState }) {
 	const [counterMax, setCounterMax] = useState(10);
-	const [counter, setCounter] = useState(counterMax);
+
+	let counter = counterMax;
 
 	const addTime = () => {
 		if (counter > 0) {
-			setCounter(Math.round((counter + counterMax / 1000) * 100) / 100);
+			counter = +Math.round((counter + counterMax / 1000) * 100) / 100;
+			console.log("we hit the add time function" + " " + counter);
 			if (counter > counterMax) {
-				setCounter((counter = counterMax));
+				counter = counterMax;
 			}
 		}
 	};
@@ -19,7 +20,6 @@ export default function ClickArea({ aliveState, setAliveState }) {
 		<div className="clickArea" onClick={addTime}>
 			<Counter
 				counter={counter}
-				setCounter={setCounter}
 				counterMax={counterMax}
 				aliveState={aliveState}
 				setAliveState={setAliveState}
